@@ -1,5 +1,5 @@
 # surface-area-regularization
-This repository contains a python implementation of our method "Efficient Minimal-Surface Regularization of Perspective Depth Maps in Variational Stereo".
+This repository contains a python implementation of our method "Efficient Minimal-Surface Regularization of Perspective Depth Maps in Variational Stereo", CVPR 2015.
 
 If you use this code, please cite the following publication:
 
