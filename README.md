@@ -25,4 +25,4 @@ framework expects a dictionary which contains the following:
 - a key 'G', value: list with the camera transformation matrices for the images
 - a key 'K', value: intrinsic calibration matrix
 
-See line 89 how the dictionary is constructed.
+See flowdepth.py line 89 how the dictionary is constructed.
