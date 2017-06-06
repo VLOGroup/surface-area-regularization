@@ -92,14 +92,6 @@ if __name__ == '__main__':
     I1 = data['images'][0]; I2 = data['images'][1]; K = data['K']
     d0 = np.ones(I1.shape)*d_init
         
-    #path='/home/gottfried/vmgpu/Playground/stereoGeoRegulariser/data/fountain_dense'
-    #data,G,K = OpenEXR.read(os.path.join(path,'frame_'+str(6).zfill(4)+'.exr'))
-    #data1,G1,K1 = OpenEXR.read(os.path.join(path,'frame_'+str(7).zfill(4)+'.exr'))
-    #images = [data['gray'].astype('f')/255, data1['gray'].astype('f')/255]
-    #G = [G, G1]
-    #data = dict(images=images, G=G, K=K)
-    #I1 = data['images'][0]; I2 = data['images'][1]; K = data['K']
-    #d0 = np.ones(I1.shape)*8.3
     
     minalpha = 0.015             # 3d points must be seen at least under this angle
     maxz = ft.camera_baseline(data['G'][0], data['G'][1])/np.arctan(minalpha/2)    # compute depth value
